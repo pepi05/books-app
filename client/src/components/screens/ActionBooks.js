@@ -47,9 +47,7 @@ const ActionBooks = () => {
                 >
                   <CardImg
                     alt="..."
-                    src={`http://${
-                      LOCAL_SERVER || HEROKU_SERVER
-                    }/public/files/foldertest/${book.image}`}
+                    src={`http://${HEROKU_SERVER}/public/files/foldertest/${book.image}`}
                     // src={`http://localhost:5000/public/files/foldertest/${book.image}`}
                     top
                     height="300px"
