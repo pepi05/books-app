@@ -175,7 +175,7 @@ const Home = () => {
 
                           <CardImg
                             alt="..."
-                            src={`https://${process.env.SERVER}/public/files/foldertest/${book.image}`}
+                            src={`http://${process.env.SERVER}/public/files/foldertest/${book.image}`}
                             top
                             height="300px"
                             onClick={() =>
@@ -260,7 +260,7 @@ const Home = () => {
                               <Col sm={6}>
                                 <img
                                   alt="..."
-                                  src={`http://localhost:5000/public/files/foldertest/${modalBook.image}`}
+                                  src={`http://${process.env.SERVER}/public/files/foldertest/${modalBook.image}`}
                                   width="100%"
                                 ></img>
                                 <div className="custom-card-headers">
