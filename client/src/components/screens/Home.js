@@ -175,9 +175,7 @@ const Home = () => {
 
                           <CardImg
                             alt="..."
-                            src={`http://${
-                              process.env.SERVER || "localhost:5000"
-                            }/public/files/foldertest/${book.image}`}
+                            src={`https://${process.env.SERVER}/public/files/foldertest/${book.image}`}
                             top
                             height="300px"
                             onClick={() =>
