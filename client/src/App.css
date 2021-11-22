@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+body {
+  font-family: "Roboto Slab", serif !important;
+}
+
+body a {
+  color: gray;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: goldenrod;
+}
+
+.nav-lists {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-fluid {
+  padding-left: 0 !important;
+}
+
+.nav-link-custom-div {
+  margin-right: 20px;
+}
+
+.custom-nav-items {
+  justify-content: space-around;
+}
+
+.form {
+  padding: 1em;
+}
+
+label {
+  font-weight: 600;
+}
+
+.login-container {
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 1rem;
+}
+
+.custom-navlinks {
+  width: 100%;
+  justify-content: center;
+}
+
+.sub-title {
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+
+.my-books-container {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 60px 0;
+}
+
+.modal-open .container-fluid,
+.modal-open .container {
+  -webkit-filter: blur(5px) grayscale(90%);
+}
+
+.custom-card-headers {
+  margin: 15px;
+}
+
+.custom-card-headers span {
+  font-weight: 400;
+  color: gray;
+}
+
+.custom-card-headers h4,
+h5,
+h6 {
+  color: coral;
+}
+
+.custom-card-headers h3,
+h2,
+h1 {
+  color: rgb(10, 163, 10);
+  margin-bottom: 40px;
+}
+
+.modal-title {
+  display: flex !important;
+  width: 100% !important;
+  justify-content: space-between !important;
+}
+
+.form-label {
+  color: coral;
+}
+
+.header-container {
+  margin-bottom: 90px;
+  padding-left: 0;
+}
+
+table th {
+  color: coral;
+}
+
+table td {
+  font-weight: 400;
+  color: gray;
+}
+
+.table > :not(:first-child) {
+  border-top: 1px solid #d5e8e1 !important;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.on {
+  color: #000;
+}
+.off {
+  color: #ccc;
+}
+
+.comments-container {
+  height: 335px;
+  overflow-y: scroll;
+}
+
+.social-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.search-container {
+  margin: 20px 30px 50px 0;
+  /* width: 95%; */
+}
+
+.search-title-input {
+  width: 85% !important;
+}
+
+.sort-rating-column {
+  align-self: center !important;
+}
+
+.sort-rating-btn {
+  background-color: #b5c0b7 !important;
+}
+
+.search-label {
+  color: #b5c0b7 !important ;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 100px;
+  height: 35px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  /* background: #373a47; */
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  /* background: #a90000; */
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+
+  top: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  /* width: 100%; */
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-menu-wrap {
+  left: 0 !important;
+  width: 35% !important;
+  /* width: 100%; */
+}
+
+/* .home-link {
+  display: flex !important;
+  flex-direction: column !important;
+} */
