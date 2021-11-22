@@ -49,7 +49,7 @@ app.use(
       },
       {
         url: regexp,
-        //  `/books/:id/reviews`,
+        //  `/books/:id/reviews`
         methods: ["GET"],
       },
       {
@@ -94,6 +94,10 @@ app.use(
 
 app.use(authRoute);
 app.use(booksRoute);
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+});
 
 app.use((err, req, res, next) => {
   if (err.name === "UnauthorizedError") {
