@@ -13,6 +13,7 @@ const { pathToRegexp } = require("path-to-regexp");
 require("dotenv").config();
 
 const path = require("path");
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 mongoose.connect(`${process.env.MONGODB_URL}`, {
   useNewUrlParser: true,
