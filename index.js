@@ -12,13 +12,10 @@ const { pathToRegexp } = require("path-to-regexp");
 
 require("dotenv").config();
 
-mongoose.connect(
-  "mongodb+srv://pepi:fUiQxEoY32UvSIUg@cluster0.xecen.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect(`${process.env.MONGODB_URL}`, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 app.use(express.json());
 // app.use(upload());
