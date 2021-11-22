@@ -31,6 +31,9 @@ const ActionBooks = () => {
     }
   }, [categoryName, books]);
 
+  const LOCAL_SERVER = "localhost:5000";
+  const HEROKU_SERVER = "library-mk.herokuapp.com";
+
   return (
     <Container>
       <Row>
@@ -45,7 +48,7 @@ const ActionBooks = () => {
                   <CardImg
                     alt="..."
                     src={`http://${
-                      process.env.SERVER || "localhost:5000"
+                      LOCAL_SERVER || HEROKU_SERVER
                     }/public/files/foldertest/${book.image}`}
                     // src={`http://localhost:5000/public/files/foldertest/${book.image}`}
                     top

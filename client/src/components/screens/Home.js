@@ -101,6 +101,8 @@ const Home = () => {
     // dispatch(searchByTitle(query));
   };
 
+  const LOCAL_SERVER = "localhost:5000";
+  const HEROKU_SERVER = "library-mk.herokuapp.com";
   return (
     <>
       {!loading ? (
@@ -175,7 +177,9 @@ const Home = () => {
 
                           <CardImg
                             alt="..."
-                            src={`http://${process.env.SERVER}/public/files/foldertest/${book.image}`}
+                            src={`http://${
+                              HEROKU_SERVER || LOCAL_SERVER
+                            }/public/files/foldertest/${book.image}`}
                             top
                             height="300px"
                             onClick={() =>
@@ -260,7 +264,9 @@ const Home = () => {
                               <Col sm={6}>
                                 <img
                                   alt="..."
-                                  src={`http://${process.env.SERVER}/public/files/foldertest/${modalBook.image}`}
+                                  src={`http://${
+                                    HEROKU_SERVER || LOCAL_SERVER
+                                  }/public/files/foldertest/${modalBook.image}`}
                                   width="100%"
                                 ></img>
                                 <div className="custom-card-headers">
