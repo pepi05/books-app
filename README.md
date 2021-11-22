@@ -13,10 +13,12 @@ TOOLS & SHORT DESCRIPTION:
 - React Hooks
 - Reactstrap (inbuilt Bootstrap components)
 
-- Everyone can see and read short description for books in library 
-- Everyone can sort books by rating 
-- Everyone can find book by title
-- Everyone can read book reviews
-- Only logged user can rate/review book, also they can update it
-- Only logged user can add/create new book in library and also they can delete it
-- User can view his profile
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Everyone can see and read short description for books in library 
+Everyone can sort books by rating 
+Everyone can find book by title
+Everyone can read book reviews
+Only logged user can rate/review book, also they can update it
+Only logged user can add/create new book in library and also they can delete it
+User can view his profile
