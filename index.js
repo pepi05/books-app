@@ -12,6 +12,8 @@ const { pathToRegexp } = require("path-to-regexp");
 
 require("dotenv").config();
 
+const path = require("path");
+
 mongoose.connect(`${process.env.MONGODB_URL}`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
